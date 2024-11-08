@@ -1,7 +1,7 @@
-export default function admin () {
+export default function admin() {
     return (
         <>
-            <h1>admin Page</h1>
+           <h1>admin</h1>
         </>
     )
 }

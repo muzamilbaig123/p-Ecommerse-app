@@ -7,10 +7,11 @@ export default function Header() {
                 <div className="flex-1">
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                     <ul className="flex gap-5">
-                        <li><Link href={"/home"}>Home</Link></li>
-                        <li><Link href={"/order"}>order</Link>order</li>
+                        <li><Link href={"/"}>Home</Link></li>
+                        <li><Link href={"/order"}>order</Link></li>
                         <li><Link href={"/allproducts"}>all products</Link></li>
                         <li><Link href={"/admin"}>admin</Link></li>
+                        <li><Link href={"/*"}>nopage</Link></li>
                     </ul>
                 </div>
                 <div className="flex-none">
