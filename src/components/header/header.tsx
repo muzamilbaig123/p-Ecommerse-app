@@ -1,8 +1,31 @@
+"use client"
+import { useAppDispatch, useAppSelector } from "@/lib/hooks"
 import Link from "../../../node_modules/next/link"
+import { themeColors } from "@/lib/slices/themecolor/theme";
 export default function Header() {
+
+    const mode = useAppSelector((state) => state.theCol.mode);
+    const dispatch = useAppDispatch();
+
+    const lightMode = {
+            backgroundColor: "#fff",
+            color: "#000"
+    }
+
+    
+    const darkMode = {
+        backgroundColor: "#273746",
+        color: "#fff"
+    }
+    const themeHandler = () => {
+        dispatch(themeColors())
+    }
+
+
+
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100" style={mode === "light" ? lightMode : darkMode}>
                 <div className="flex-1">
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                     <ul className="flex gap-5">
@@ -64,6 +87,9 @@ export default function Header() {
                             <li><a>Settings</a></li>
                             <li><a>Logout</a></li>
                         </ul>
+                    </div>
+                    <div>
+                        <button onClick={themeHandler}>Theme</button>
                     </div>
                 </div>
             </div>

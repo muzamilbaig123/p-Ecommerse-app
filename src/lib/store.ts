@@ -1,12 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-
-import globalData from "@/lib/slices/renameing/check" 
+import themeColors from './slices/themecolor/theme'
 
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      stuData: globalData
+      theCol: themeColors
     },
   })
 }
