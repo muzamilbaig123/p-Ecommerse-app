@@ -1,8 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 
+import globalData from "@/lib/slices/renameing/check" 
+
+
 export const makeStore = () => {
   return configureStore({
-    reducer: {},
+    reducer: {
+      stuData: globalData
+    },
   })
 }
 
