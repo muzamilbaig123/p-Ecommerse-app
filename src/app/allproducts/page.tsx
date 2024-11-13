@@ -1,7 +1,12 @@
-export default function allProducts () {
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+
+export default function allproducts() {
     return (
         <>
-            <h1>all products</h1>
+        <Header />
+           <h1>allproducts</h1>
+        <Footer />
         </>
     )
 }

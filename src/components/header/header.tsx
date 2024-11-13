@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import Link from "../../../node_modules/next/link"
 export default function Header() {
     return (
         <>
@@ -8,10 +7,10 @@ export default function Header() {
                     <a className="btn btn-ghost text-xl">daisyUI</a>
                     <ul className="flex gap-5">
                         <li><Link href={"/"}>Home</Link></li>
+                        <li><Link href={"/cart"}>cart</Link></li>
                         <li><Link href={"/order"}>order</Link></li>
                         <li><Link href={"/allproducts"}>all products</Link></li>
-                        <li><Link href={"/admin"}>admin</Link></li>
-                        <li><Link href={"/*"}>nopage</Link></li>
+                        <li><Link href={"/admin"}>Dashboard</Link></li>
                     </ul>
                 </div>
                 <div className="flex-none">

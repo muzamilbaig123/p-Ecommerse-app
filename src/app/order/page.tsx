@@ -1,7 +1,12 @@
-export default function orderPage () {
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+
+export default function orderPage() {
     return (
         <>
-            <h1>Order Page</h1>
+        <Header />
+           <h1>order</h1>
+        <Footer />
         </>
     )
 }
