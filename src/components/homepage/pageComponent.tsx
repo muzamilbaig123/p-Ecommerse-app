@@ -1,6 +1,8 @@
 import Category from "../filter/category";
 import HeroSection from "../herosection/page";
 import ProductCard from "../products/productCard";
+import Testimonials from "../testimonials/testimonials";
+import Track from "../track/track";
 
 export default function () {
 
@@ -14,6 +16,10 @@ export default function () {
                 <Category />
                 <div className="m-10"></div>
                 <ProductCard />
+                <div className="m-10"></div>
+                <Track />
+                <div className="m-10"></div>
+                <Testimonials />
             </div>
             <div className="mb-14"></div>
         </>

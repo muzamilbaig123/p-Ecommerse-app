@@ -27,13 +27,12 @@ export default function Header() {
         <>
             <div className="navbar bg-base-100" style={mode === "light" ? lightMode : darkMode}>
                 <div className="flex-1">
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <Link href="/" className="btn btn-ghost text-xl">MM Computers</Link>
                     <ul className="flex gap-5">
                         <li><Link href={"/"}>Home</Link></li>
-                        <li><Link href={"/cart"}>cart</Link></li>
                         <li><Link href={"/order"}>order</Link></li>
                         <li><Link href={"/allproducts"}>all products</Link></li>
-                        <li><Link href={"/admin"}>Dashboard</Link></li>
+                        <li><Link href={"/admin"}>admin</Link></li>
                     </ul>
                 </div>
 
@@ -63,7 +62,7 @@ export default function Header() {
                                 <span className="text-lg font-bold">8 Items</span>
                                 <span className="text-info">Subtotal: $999</span>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary btn-block">View cart</button>
+                                   <Link href={"/cart"}><button className="btn btn-primary btn-block">View cart</button></Link> 
                                 </div>
                             </div>
                         </div>
