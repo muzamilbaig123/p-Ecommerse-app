@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaUserTie } from 'react-icons/fa';
+import DashboardTab from './dashboardtab';
 
 export default function Dashboard() {
   return (
@@ -44,6 +45,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+      <DashboardTab />
     </section>
   )
 }
