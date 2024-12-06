@@ -1,11 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import themeColors from './slices/themecolor/theme'
 
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      theCol: themeColors
     },
   })
 }
