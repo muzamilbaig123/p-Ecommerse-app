@@ -1,9 +1,5 @@
-"use client"
 import Link from "../../../node_modules/next/link"
 export default function Header() {
-
-    
-
 
     return (
         <>
@@ -69,9 +65,6 @@ export default function Header() {
                             <li><a>Settings</a></li>
                             <li><a>Logout</a></li>
                         </ul>
-                    </div>
-                    <div>
-                        <button>Theme</button>
                     </div>
                 </div>
             </div>
